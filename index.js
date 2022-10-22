@@ -9,7 +9,6 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.left = x + "px";
   cursor.style.display = "block";
 
-  //cursor effects when mouse stopped
   function mouseStopped() {
     cursor.style.display = "none";
   }
@@ -17,7 +16,6 @@ document.addEventListener("mousemove", (e) => {
   timeout = setTimeout(mouseStopped, 5000);
 });
 
-//cursor effects when mouseout
 document.addEventListener("mouseout", () => {
   cursor.style.display = "none";
 });
